@@ -1,10 +1,18 @@
 
-# Enhanced Nationwide Platform
+# Advanced Terraform Enhancements
 
-Includes:
-- EKS Cluster Provisioning
-- Node Groups
-- EFS
-- IAM Roles
-- VPC Networking
-- S3 Bucket
+Added:
+- Route Tables
+- NAT Gateways
+- Security Groups
+- EKS Addons
+- IRSA Roles
+- Remote State Bootstrap
+
+Enterprise Features:
+- Private subnet routing
+- NAT outbound access
+- Worker node security groups
+- EKS managed addons
+- IAM Roles for Service Accounts
+- Terraform backend bootstrap
