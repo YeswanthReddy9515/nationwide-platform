@@ -1,18 +1,22 @@
 
-# Kubernetes Governance & Enterprise Enhancements
+# Final Enterprise Platform Enhancements
 
 Added:
-- Terraform CI/CD
-- tfsec security scanning
-- ResourceQuota
-- LimitRange
-- NetworkPolicies
-- HPA
-- PodDisruptionBudget
-- ServiceAccounts
-- RBAC
-- Kyverno policies
-- FluentBit configs
-- OpenTelemetry configs
-- Helm governance templates
-- Disaster recovery runbooks
+- VPC Endpoints
+- Private EKS Endpoint Strategy
+- EKS Access Entries
+- External Secrets
+- Metrics Server
+- Cluster Autoscaler Deployment
+- ALB Controller Deployment
+- cert-manager
+- ExternalDNS
+- StorageClasses
+- Velero Backup
+- FluentBit Deployment
+- OpenTelemetry Collector
+- WAF
+- Policy-as-Code
+
+Cluster Autoscaler retained as scaling strategy.
+Karpenter intentionally excluded.
