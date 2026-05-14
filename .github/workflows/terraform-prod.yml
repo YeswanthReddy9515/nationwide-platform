@@ -1,0 +1,7 @@
+
+name: Terraform Prod Deploy
+
+on:
+  push:
+    branches:
+      - main

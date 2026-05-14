@@ -1,12 +1,10 @@
 
-# Enterprise Platform Maturity Enhancements
+# Enterprise Infrastructure Provisioning Repository
 
-This package adds final enterprise maturity controls:
-- Terraform testing
-- Drift detection
-- Compliance-as-Code
-- IAM permission boundaries
-- Multi-account readiness
-- EKS upgrade strategy
-- Disaster recovery validation
-- Operational governance
+Provisioning Stack:
+- Terraform
+- AWS EKS
+- GitHub Actions
+- OIDC Authentication
+- Dev / QA / Prod environments
+- Enterprise CI/CD governance

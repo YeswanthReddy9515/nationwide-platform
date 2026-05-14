@@ -1,0 +1,7 @@
+
+name: Terraform QA Deploy
+
+on:
+  push:
+    branches:
+      - qa
