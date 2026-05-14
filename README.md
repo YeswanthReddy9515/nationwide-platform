@@ -1,18 +1,16 @@
+# Enterprise Terraform Enhancements
 
-# Advanced Terraform Enhancements
-
-Added:
-- Route Tables
-- NAT Gateways
-- Security Groups
-- EKS Addons
-- IRSA Roles
-- Remote State Bootstrap
-
-Enterprise Features:
-- Private subnet routing
-- NAT outbound access
-- Worker node security groups
-- EKS managed addons
-- IAM Roles for Service Accounts
-- Terraform backend bootstrap
+Includes:
+- Multi-AZ networking
+- Public/private subnet separation
+- Internet Gateway
+- NAT Gateway
+- Advanced Security Groups
+- OIDC Provider
+- EKS logging
+- KMS encryption
+- ALB Controller
+- Cluster Autoscaler IAM
+- EFS improvements
+- CloudWatch logging
+- Environment tfvars
