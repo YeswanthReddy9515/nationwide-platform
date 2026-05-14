@@ -1,10 +1,8 @@
 
 terraform {
-  required_version = ">= 1.5.0"
-
   backend "s3" {
     bucket         = "nationwide-terraform-state"
-    key            = "prod/eks/terraform.tfstate"
+    key            = "prod/terraform.tfstate"
     region         = "us-east-1"
     dynamodb_table = "terraform-locks"
   }
@@ -12,4 +10,27 @@ terraform {
 
 provider "aws" {
   region = "us-east-1"
+}
+
+module "vpc" {
+  source = "./modules/vpc"
+}
+
+module "iam" {
+  source = "./modules/iam"
+}
+
+module "eks" {
+  source           = "./modules/eks"
+  subnet_ids       = module.vpc.private_subnet_ids
+  cluster_role_arn = module.iam.eks_cluster_role_arn
+}
+
+module "efs" {
+  source     = "./modules/efs"
+  subnet_ids = module.vpc.private_subnet_ids
+}
+
+module "s3" {
+  source = "./modules/s3"
 }

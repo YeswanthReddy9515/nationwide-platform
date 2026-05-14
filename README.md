@@ -1,15 +1,10 @@
 
-# Nationwide Enterprise ETL Platform
+# Enhanced Nationwide Platform
 
-Enterprise Kubernetes-native ETL platform using:
-- AWS EKS
-- Terraform
-- GitHub Actions
-- Docker
-- Helm
-- Python + Polars
-
-## Environments
-- Dev
-- QA
-- Prod
+Includes:
+- EKS Cluster Provisioning
+- Node Groups
+- EFS
+- IAM Roles
+- VPC Networking
+- S3 Bucket
