@@ -1,0 +1,5 @@
+
+polars==1.0.0
+pytest
+boto3
+pyyaml

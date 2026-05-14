@@ -1,0 +1,16 @@
+
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: etl-job
+spec:
+  template:
+    spec:
+      containers:
+      - name: etl
+        image: nationwide-etl:latest
+        resources:
+          requests:
+            cpu: "2"
+            memory: "4Gi"
+      restartPolicy: Never

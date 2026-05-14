@@ -1,0 +1,9 @@
+
+interface:
+  name: customer
+
+validation:
+  row_count: true
+
+transformations:
+  - uppercase_name

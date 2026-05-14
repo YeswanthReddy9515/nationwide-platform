@@ -1,0 +1,15 @@
+
+terraform {
+  required_version = ">= 1.5.0"
+
+  backend "s3" {
+    bucket         = "nationwide-terraform-state"
+    key            = "prod/eks/terraform.tfstate"
+    region         = "us-east-1"
+    dynamodb_table = "terraform-locks"
+  }
+}
+
+provider "aws" {
+  region = "us-east-1"
+}

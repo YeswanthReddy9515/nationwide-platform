@@ -1,0 +1,27 @@
+
+name: Deploy ETL Platform
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+
+    - name: Configure AWS
+      uses: aws-actions/configure-aws-credentials@v4
+      with:
+        role-to-assume: arn:aws:iam::123456789012:role/github-actions-role
+        aws-region: us-east-1
+
+    - name: Build Docker Image
+      run: docker build -t nationwide-etl .
+
+    - name: Deploy
+      run: echo "Deploying to EKS"

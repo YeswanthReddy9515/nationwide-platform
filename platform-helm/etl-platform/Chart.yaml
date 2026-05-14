@@ -1,0 +1,4 @@
+
+apiVersion: v2
+name: etl-platform
+version: 1.0.0
